@@ -16,8 +16,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    int x;
+    NSLog(@"hello world");
+    int x = 5;
+    int y = 20;
+    int z = -2;
+    
+    // operators include: + - * /
+    
+    int additionAnswer = x + y;
+    int mutiplicationAnswer = y * z;
+    
+    float heightOfEverstBaseCamp = 16900.3;
+    float heightOfEverst = 29029;
+    
+    float distanceToTravel = heightOfEverst - heightOfEverstBaseCamp;
+    distanceToTravel -= 1000;
+    
+    NSLog(@"The disitance to travel is: %f",distanceToTravel);
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,4 +41,6 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)convertUnits:(UIButton *)sender {
+}
 @end
