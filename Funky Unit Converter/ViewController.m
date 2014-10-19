@@ -42,5 +42,8 @@
 }
 
 - (IBAction)convertUnits:(UIButton *)sender {
+    float numOfBills = [self.numOfBillsTextField.text floatValue];
+    float numOfFootballFields = numOfBills / 91440;
+    self.numOfBillsLabel.text = [NSString stringWithFormat:@"%f",numOfFootballFields];
 }
 @end
